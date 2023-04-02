@@ -1,0 +1,10 @@
+name: Reusing other workflow
+on: push
+
+jobs:
+  call-workflow-passing-data:
+    uses: sylweltan/actions-devsecops/.github/workflows/basic-build.yaml@master
+    with:
+      config-path: .github/labeler.yaml
+    secrets:
+      secsylwtoken: ${{ secrets.anotherSecret }}
