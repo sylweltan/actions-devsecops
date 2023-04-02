@@ -3,7 +3,8 @@ on: push
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    # runs-on: ubuntu-22.04
+    runs-on: [self-hosted]
     name: Run basic build
     steps:
     - uses: actions/checkout@v2
