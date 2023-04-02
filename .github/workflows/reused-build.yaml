@@ -15,5 +15,5 @@ jobs:
     uses: sylweltan/actions-devsecops/.github/workflows/basic-build.yaml@master
     with:
       config-path: .github/labeler.yaml
-    secrets:
-      SECSYLW: ${{ secrets.anotherSecret }}
+    # secrets:
+    #   SECSYLW: ${{ secrets.anotherSecret }}
