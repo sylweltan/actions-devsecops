@@ -1,5 +1,14 @@
-name: Reusing other workflow
-on: push
+name: Reusable workflow example
+
+on: 
+  workflow_call:
+    inputs:
+      config-path:
+        required: false
+        type: string
+    secrets:
+      token:
+        required: true
 
 jobs:
   call-workflow-passing-data:
