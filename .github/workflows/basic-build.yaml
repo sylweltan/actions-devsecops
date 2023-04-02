@@ -10,7 +10,6 @@ on:
 jobs:
   build:
     # runs-on: ubuntu-22.04
-    # comment
     runs-on: [self-hosted]
     name: Run basic build
     steps:
