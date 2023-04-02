@@ -1,5 +1,11 @@
 name: Basic Java Build
-on: push
+# on: push
+on:
+  workflow_call:
+    inputs:
+      config-path:
+        required: false
+        type: string
 
 jobs:
   build:
