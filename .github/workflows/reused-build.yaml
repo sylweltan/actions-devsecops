@@ -16,4 +16,4 @@ jobs:
     with:
       config-path: .github/labeler.yaml
     secrets:
-      secsylwtoken: ${{ secrets.anotherSecret }}
+      SECSYLW: ${{ secrets.anotherSecret }}
